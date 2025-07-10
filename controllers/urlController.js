@@ -76,9 +76,9 @@ const getOriginalUrl = async (req, res) => {
 
 const getAllUrls = async (req, res) => {
   try {
-    const urls = await Url.find().select(
-      "shortId originalUrl expiryDate clicks createdAt"
-    );
+    const urls = await Url.find()
+      .select("shortId originalUrl expiryDate clicks createdAt")
+      .sort({ createdAt: -1 });
     res.status(200).json(urls);
   } catch (error) {
     console.error("Error fetching URLs:", error);
