@@ -18,13 +18,4 @@ app.get("/", (req, res) => {
   });
 });
 
-// app.post("/shorten", urlShorten);
 
-// app.get("/:shortId", redirectToOriginal);
-
-// app.get("/api/original/:shortId", getOriginalUrl);
-
-// app.get("/api/urls", getAllUrls);
-
-// // Route to delete a URL by shortId
-// app.delete("/api/urls/:shortId", deleteUrlData);
