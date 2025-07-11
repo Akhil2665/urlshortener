@@ -18,6 +18,6 @@ router.get("/api/original/:shortId", getOriginalUrl);
 
 router.get("/api/urls", getAllUrls);
 
-router.delete("/api/urls/:shortId", deleteUrlData); 
+router.delete("/api/urls/:shortId", deleteUrlData);
 
 module.exports = router;
